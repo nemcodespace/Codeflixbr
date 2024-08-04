@@ -1,0 +1,485 @@
+/* formatação universal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+ /* background: #232323;*/
+  background: #1C1C1C;
+  color: white;
+  font-size: 1em;
+}
+/* formatação universal */
+
+/* formaracao hearder */
+header {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient( to top, black, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://image.tmdb.org/t/p/w1280/wNAhuOZ3Zf84jCIlrcI6JhgmY5q.jpg")no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+header .logo {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+header h1 {
+  color: red;
+}
+header span {
+  color: white;
+}
+header .br {
+  font-size: 20px;
+  color: white;
+  border-radius: 30px;
+  background: green;
+  padding: 8px 10px;
+  color: yellow;
+}
+/* formaracao hearder */
+
+/* formatação do nav */
+nav {
+  width: 100%;
+  height: 60px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #1C1C1C;
+}
+nav .menu {
+  width: 90%;
+}
+nav .menu a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+nav .menu a:hover {
+  color: red;
+  border-bottom: 2px solid yellow;
+}
+#principal {
+  color: red;
+  border-bottom: 2px solid yellow;
+}
+/* formatação do nav */
+
+/* formatação do campo de busca */
+.busca {
+  width: 100%;
+}
+.search:hover {
+  border: 2px solid gray;
+}
+.search {
+  width: 80%;
+  height: 50px;
+  background: #3b3b3b;
+  margin: 20px 20px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.search input {
+  width: 100%;
+  background: #3b3b3b;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+  margin-left: 5px;
+}
+.search img {
+  margin-right: 3px;
+}
+
+
+/* formatação do capas lançamento */
+.capa-lancamento {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient( to top, #1C1C1C, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://image.tmdb.org/t/p/w1280/4V480oXuDLXxtVd4Mxw7G0ebW94.jpg")no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.capa-lancamento p {
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+}
+.dentro {
+  width: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.capa-lancamento a {
+  background: red;
+  margin: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 10px black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.capa-lancamento a:hover {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+/* formatação do capas lançamento */
+
+.filmes-destaques {
+  width: 90%;
+  padding: 30px 0;
+  margin: auto;
+}
+.filmes-destaques h2 {
+  color: white;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5px;
+}
+
+/* formatação do article */
+article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  flex: 1 1 150px;
+  max-width: 150px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+.filme img {
+  width: 150px;
+  max-width: 150px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+.filme a {
+  width: 140px;
+  background: red;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 1px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.filme a span {
+  margin-left: 5px;
+  color: yellow;
+}
+.hd {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: black;
+  border-radius: 5px;
+  padding: 2px;
+}
+span.hd {
+  font-size: 20px;
+  color: white;
+}
+.filme p {
+  width: 140px;
+  height: 180px;
+  position: absolute;
+  margin: 10px;
+  display: none;
+  font-size: 10px;
+}
+.filme strong {
+  color: red;
+}
+.filme i {
+  color: yellow;
+}
+.filme:hover.filme p {
+  display: block;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: -30px;
+  box-shadow: 0 0 10px black;
+}
+.filme .titulo {
+  font-size: 10px;
+  font-weight: bold;
+}
+.filme:hover .hd {
+  display: none;
+}
+/* formatação do article */
+
+/* proxima pagina */
+.proxima {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.pagina {
+  width: 30px;
+  height: 30px;
+  background: red;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.pagina a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+.pagina a:hover {
+  background: yellow;
+  color: red;
+  border-radius: 8px;
+}
+#select a {
+  width: 35px;
+  height: 35px;
+  color: red;
+  background: yellow;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* séries of*/
+.series-of {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.series-of span {
+  color: red;
+  font-size: 100px;
+  margin-top: 50px;
+}
+.series-of h1 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+/* séries of*/
+
+/* assista iptv */
+.assista-iptv {
+  background: white;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.assista-iptv h2 {
+  color: #00BFFF;
+  padding: 20px 0;
+}
+.assista-iptv button {
+  width: 250px;
+  display: block;
+  height: 50px;
+  border: 2px solid #1E90FF;
+  background: #00BFFF;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.assista-iptv a {
+  text-decoration: none;
+  font-size: 30px;
+  background: #00BFFF;
+  color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* assista iptv */
+
+/* formatação do formulário contato */
+.contato-form {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+.contato-form h1 {
+  font-size: 30px;
+  padding: 20px 0;
+  color: red;
+}
+.contato-form p {
+  padding: 20px 0;
+}
+label {
+  display: block;
+}
+.contato-form input {
+  width: 100%;
+  height: 40px;
+  background: #2b2b2b;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 280px;
+  max-height: 150px;
+  min-height: 150px;
+  background: #2b2b2b;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  margin: 5px 0;
+}
+#botao-enviar {
+  width: 280px;
+  background: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* formatação do animetv */
+.animes {
+  margin: 0 35px;
+  padding-top: 30px;
+  border-bottom: 2px solid gray;
+}
+.animes h3 {
+  padding-bottom: 3px;
+  color: white;
+}
+.container-tv {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 30px 0;
+}
+.container-tv h3 {
+  margin: 30px 0;
+}
+.container-tv img {
+  margin: 10px;
+  border-radius: 5px;
+}
+.container-tv a {
+  width: 90px;
+  display: block;
+  background: red;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 30px;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.btn-tv {
+  margin-top: 10px;
+}
+
+/* formatação do footer */
+footer {
+  width: 100%;
+  display: flex;
+  background: black;
+  justify-content: center;
+}
+.footer-logo {
+  width: 90%;
+  margin: 30px;
+  font-size: 12px;
+}
+footer .footer-logo h3 {
+  color: red;
+}
+footer .footer-logo span {
+  color: white;
+}
+#br {
+  font-size: 8px;
+  color: white;
+  border-radius: 8px;
+  background: green;
+  padding: 4px 5px;
+  color: yellow;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: gray;
+  text-transform: capitalize;
+}
+/* formatação do footer */

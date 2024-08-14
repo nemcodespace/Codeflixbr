@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Email enviado com sucesso!";
-        echo "voltar para página anterior";
     } else {
         echo "Falha ao enviar o email.";
     }
